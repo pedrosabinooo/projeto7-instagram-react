@@ -1,4 +1,4 @@
-export default function Stories() {
+export default function Sidebar() {
     return (
         <div class="sidebar">
         <div class="usuario">
