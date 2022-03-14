@@ -1,22 +1,14 @@
 import ReactDOM from "react-dom";
-import Menu from "./components/Menu";
-import Feed from "./components/Feed";
-import Account from "./components/Account";
-import Suggestions from "./components/Suggestions";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Corpo from "./components/Corpo";
+import FundoMobile from "./components/FundoMobile";
 
 function App() {
   return (
     <div>
-      <Menu />
-      <div>
-        <Feed />
-        <div class="side-bar">
-          <Account />
-          <Suggestions />
-          <Footer />
-        </div>
-      </div>
+      <Navbar />
+      <Corpo />
+      <FundoMobile />
     </div>
   );
 }
