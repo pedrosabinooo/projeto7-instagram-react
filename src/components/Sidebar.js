@@ -48,7 +48,7 @@ export default function Sidebar() {
           <div>Ver tudo</div>
         </div>
 
-        {sugestoes.map((sugestao) => {
+        {sugestoes.map((sugestao) => (
           <div className="sugestao">
             <div className="usuario">
               <img src={sugestao.profilePic} />
@@ -59,9 +59,10 @@ export default function Sidebar() {
             </div>
 
             <div className="seguir">Seguir</div>
-          </div>;
-        })}
+          </div>
+        ))}
       </div>
+      
       <div className="links">
         Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos •
         Localizações • Contas mais relevantes • Hashtags • Idioma
