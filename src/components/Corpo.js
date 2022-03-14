@@ -1,6 +1,6 @@
-import Stories from "./components/Stories";
-import Posts from "./components/Posts";
-import Sidebar from "./components/Sidebar";
+import Stories from "./Stories";
+import Posts from "./Posts";
+import Sidebar from "./Sidebar";
 
 export default function Corpo() {
   return (

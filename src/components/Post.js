@@ -1,4 +1,4 @@
-import Post from "./components/Post";
+import Post from "./Post";
 
 export default function Posts() {
     const posts = [

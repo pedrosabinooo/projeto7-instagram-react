@@ -13,5 +13,4 @@ function App() {
   );
 }
 
-const elemento = document.querySelector(".root");
-ReactDOM.render(<App />, elemento);
+ReactDOM.render(<App />, document.querySelector(".root"));
