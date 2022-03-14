@@ -9,14 +9,14 @@ export default function Posts() {
     return (
         function Post() {
             return (
-                <div class="post">
+                <div className="post">
                     {posts.map(props => {
-                        <div class="topo">
-                        <div class="usuario">
+                        <div className="topo">
+                        <div className="usuario">
                           <img src={props.fotoPerfil} />
                           {props.nome}
                         </div>
-                        <div class="acoes">
+                        <div className="acoes">
                           <ion-icon name="ellipsis-horizontal"></ion-icon>
                         </div>
                       </div>
@@ -25,8 +25,8 @@ export default function Posts() {
                     }
                 
         
-                <div class="fundo">
-                  <div class="acoes">
+                <div className="fundo">
+                  <div className="acoes">
                     <div>
                       <ion-icon name="heart-outline"></ion-icon>
                       <ion-icon name="chatbubble-outline"></ion-icon>
@@ -51,12 +51,12 @@ export default function Posts() {
         
 function topo(props) {
     return (
-        <div class="topo">
-          <div class="usuario">
+        <div className="topo">
+          <div className="usuario">
             <img src={props.fotoPerfil} />
             {props.nome}
           </div>
-          <div class="acoes">
+          <div className="acoes">
             <ion-icon name="ellipsis-horizontal"></ion-icon>
           </div>
         </div>
@@ -65,7 +65,7 @@ function topo(props) {
 
 function conteudo(props) {
     return (
-        <div class="conteudo">
+        <div className="conteudo">
           <img src={props.conteudo} />
         </div>
     )
@@ -73,9 +73,9 @@ function conteudo(props) {
 
 function curtidas(props) {
     return (
-        <div class="curtidas">
+        <div className="curtidas">
             <img src={props.curtidoPorImagem} />
-            <div class="texto">
+            <div className="texto">
               Curtido por <strong>{props.curtidoPor}</strong> e <strong>outras 101.523 pessoas</strong>
             </div>
         </div>
@@ -84,7 +84,7 @@ function curtidas(props) {
 
 function Post() {
     return (
-        <div class="post">
+        <div className="post">
             {posts.map(props => 
                 topo(props)
             )
@@ -95,8 +95,8 @@ function Post() {
             }
         
 
-        <div class="fundo">
-          <div class="acoes">
+        <div className="fundo">
+          <div className="acoes">
             <div>
               <ion-icon name="heart-outline"></ion-icon>
               <ion-icon name="chatbubble-outline"></ion-icon>

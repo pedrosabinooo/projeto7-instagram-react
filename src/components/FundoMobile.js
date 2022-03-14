@@ -8,7 +8,7 @@ export default function FundoMobile() {
   ];
 
   return (
-    <div class="fundo-mobile">
+    <div className="fundo-mobile">
       {icones.map((icone) => (
         <ion-icon name={icone.name}></ion-icon>
       ))}

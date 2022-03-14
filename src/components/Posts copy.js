@@ -1,6 +1,6 @@
 import Post from "./Post";
 
-export default function Posts() {
+function PostsCopy() {
     const posts = [
       {
         fotoPerfil: "assets/img/meowed.svg",
@@ -18,7 +18,7 @@ export default function Posts() {
       },
     ];
     return (
-    <div class="posts">
+    <div className="posts">
       {posts.map(props => <Post fotoPerfil={props.fotoPerfil} nome={props.nome} conteudo={props.conteudo} curtidoPor={props.curtidoPor} curtidoPorImagem={props.curtidoPorImagem}/>)}
     </div>
   );
@@ -26,12 +26,12 @@ export default function Posts() {
 
 function Post() {
     return (
-      <div class="post">
+      <div className="post">
         {posts.map((props) => topo(props))}
         {posts.map((props) => conteudo(props))}
   
-        <div class="fundo">
-          <div class="acoes">
+        <div className="fundo">
+          <div className="acoes">
             <div>
               <ion-icon name="heart-outline"></ion-icon>
               <ion-icon name="chatbubble-outline"></ion-icon>
@@ -47,3 +47,5 @@ function Post() {
       </div>
     );
   }
+
+  export default PostsCopy;
